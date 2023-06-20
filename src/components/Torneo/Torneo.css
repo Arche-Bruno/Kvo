@@ -1,0 +1,22 @@
+.torneo-container {
+  text-align: center;
+}
+
+@keyframes parpadeo {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.parpadeo-texto {
+  animation: parpadeo 2s linear infinite;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}

@@ -1,0 +1,259 @@
+.recargar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  height: 100%;
+  gap: 30px;
+}
+
+.image-container {
+  margin-top: 20px;
+  flex-basis: 70%;
+  flex-grow: 1; /* Ocupa todo el espacio vertical disponible */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Centra horizontalmente el contenido */
+  flex-wrap: wrap;
+
+  background-color: rgba(0, 0, 0, 0.8);
+  position: relative;
+  height: 56vh;
+  overflow: hidden;
+  border-radius: 12px;
+  overflow-y: scroll;
+}
+.texto {
+  margin-bottom: 370px;
+  color: #fff;
+  font-family: "Notable", sans-serif;
+}
+.userTexto {
+  color: #1877f2;
+}
+.image-container img {
+  display: block;
+  margin-top: -50%;
+  position: absolute;
+  bottom: -55%;
+  top: 98%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  height: auto;
+  width: 80%;
+}
+
+.recargar-image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
+}
+
+.recargar-card {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.recargar-coil {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px 65px;
+  border-radius: 8px;
+  border: 3px solid #1877f2;
+}
+.icon-dolar {
+  font-size: 18px;
+}
+.cambio {
+  padding: 14px;
+  font-size: 14px;
+}
+
+/* Agrega estilos adicionales según tus preferencias */
+
+@media screen and (max-width: 600px) {
+  .recargar-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .image-container {
+    margin-top: 350px;
+    flex-basis: 10%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    overflow: hidden;
+    border-radius: 10px;
+    overflow-y: scroll;
+    z-index: 1; /* Asegura que image-container se superponga a recargar-card */
+    width: 80%;
+    height: 30%;
+  }
+  .image-container img {
+    position: absolute;
+    bottom: -60%;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    height: auto;
+    width: 50%;
+  }
+  .texto {
+    margin-top: 180px;
+    font-size: 10px;
+    color: #fff;
+    font-family: "Notable", sans-serif;
+  }
+  .userTexto {
+    color: #1877f2;
+  }
+  .recargar-card {
+    margin-top: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 0;
+  }
+
+  .recargar-image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+  }
+
+  /* Resto de estilos ... */
+  .recargar-image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+  }
+
+  .recargar-coil {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 5px 30px;
+    border-radius: 6px;
+  }
+  .icon-dolar {
+    font-size: 18px;
+  }
+  .cambio {
+    padding: 14px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  /* Aquí puedes agregar los estilos específicos para pantallas medianas */
+  .recargar-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .recargar-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .image-container {
+    margin-top: 350px;
+    flex-basis: 10%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    overflow: hidden;
+    border-radius: 10px;
+    overflow-y: scroll;
+    z-index: 1; /* Asegura que image-container se superponga a recargar-card */
+    width: 80%;
+    height: 30%;
+  }
+  .image-container img {
+    position: absolute;
+    bottom: -60%;
+    top: 80%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    height: auto;
+    width: 50%;
+  }
+  .texto {
+    margin-top: 150px;
+    font-size: 10px;
+    color: #fff;
+    font-family: "Notable", sans-serif;
+  }
+  .userTexto {
+    color: #1877f2;
+  }
+  .recargar-card {
+    margin-top: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: relative;
+    z-index: 0;
+  }
+
+  .recargar-image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+  }
+
+  /* Resto de estilos ... */
+  .recargar-image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+  }
+
+  .recargar-coil {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 5px 30px;
+    border-radius: 6px;
+  }
+  .icon-dolar {
+    font-size: 18px;
+  }
+  .cambio {
+    padding: 14px;
+    font-size: 14px;
+  }
+}

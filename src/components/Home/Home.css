@@ -1,0 +1,116 @@
+.home-container {
+  background-image: url("../../img/background.png");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.campo {
+  width: 90%;
+  height: auto; /* Cambiado a altura automática */
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  flex-grow: 1; /* Ocupa todo el espacio vertical disponible */
+}
+
+.botones-superiores {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.botones-superiores button {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.contenido {
+  text-align: center;
+}
+
+/* Seccion botones */
+
+.botones-superiores {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px; /* Espacio entre los botones */
+}
+
+#btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 24px;
+  margin: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: 3px solid #1877f2;
+  color: #f0f0f0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+#btn.activo {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+}
+
+@media screen and (max-width: 600px) {
+  .home-container {
+    background-image: url("../../img/background.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .campo {
+    width: 90%;
+    height: 1200px; /* Cambiado a altura automática */
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 10px;
+  }
+
+  .botones-superiores {
+    display: flex;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #f0f0f0;
+  }
+
+  .botones-superiores button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .contenido {
+    text-align: center;
+  }
+
+  /* Seccion botones */
+
+  #btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  #btn.activo {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+  }
+}

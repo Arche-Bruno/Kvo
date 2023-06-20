@@ -1,0 +1,42 @@
+.usuario-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 20px;
+}
+.usuario-container {
+  width: 40%;
+}
+
+.nombre-usuario {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+.imagen-container {
+  margin-bottom: 20px;
+}
+
+.imagen-usuario {
+  width: 150px;
+  height: 150px;
+}
+
+.botones-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.boton {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffffff;
+  color: #000000;
+  cursor: pointer;
+}

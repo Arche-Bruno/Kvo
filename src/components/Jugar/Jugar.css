@@ -1,0 +1,733 @@
+@import url("https://fonts.googleapis.com/css2?family=Medula+One&family=Notable&display=swap");
+
+.contenedor-padre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  position: relative;
+}
+
+.card-container-crear {
+  width: 100%;
+
+  border-radius: 10px;
+}
+
+.card-container-salas {
+  width: 100%;
+  height: 560px;
+  overflow-y: scroll;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+}
+
+/*EFECTOS PARA CONTADOR*/
+
+/* TERMINA EFECTOS DE CONTADOR*/
+
+.card {
+  height: 560px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/*ESTILOS PARA EL BOTON COILS */
+.coil {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 40px;
+  border-radius: 8px;
+  border: 3px solid #1877f2;
+}
+
+.coil .fondo {
+  width: 200px; /* Tamaño deseado */
+  height: 70px; /* Tamaño deseado */
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 8px;
+}
+
+.coil .coils-texto {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  color: white;
+  font-family: "Medula One", cursive;
+}
+.icon-dolar {
+  font-size: 30px;
+}
+.icon-dolar-coils {
+  font-size: 20px;
+}
+.coil {
+  position: relative;
+  display: inline-block;
+  margin-left: 190px;
+  margin-top: 25px;
+  margin-bottom: 18px;
+  border-radius: 8px;
+  border: 3px solid #1877f2;
+  animation: tambaleo 3s infinite;
+}
+.coil:hover {
+  animation-play-state: paused;
+}
+
+@keyframes tambaleo {
+  0% {
+    transform: translate(-50%, -50%) rotateZ(0deg);
+  }
+  10% {
+    transform: translate(-50%, -50%) rotateZ(-5deg);
+  }
+  20% {
+    transform: translate(-50%, -50%) rotateZ(5deg);
+  }
+  30% {
+    transform: translate(-50%, -50%) rotateZ(-3deg);
+  }
+  40% {
+    transform: translate(-50%, -50%) rotateZ(3deg);
+  }
+  50% {
+    transform: translate(-50%, -50%) rotateZ(-2deg);
+  }
+  60% {
+    transform: translate(-50%, -50%) rotateZ(2deg);
+  }
+  70% {
+    transform: translate(-50%, -50%) rotateZ(-1deg);
+  }
+  80% {
+    transform: translate(-50%, -50%) rotateZ(1deg);
+  }
+  90% {
+    transform: translate(-50%, -50%) rotateZ(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotateZ(0deg);
+  }
+}
+
+/*TERMINO LOS ESTILOS*/
+
+/* ESTILOS PARA LOS MODOS*/
+.modo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 8px;
+  border-radius: 13px;
+}
+
+.modo-text {
+  flex: 1;
+}
+.texto-modo {
+  color: #1877f2;
+  font-family: "Notable", sans-serif;
+}
+.texto-coils {
+  font-family: "Medula One", cursive;
+  color: #fff;
+  font-size: 35px;
+}
+
+.modo-text p {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 900;
+  color: #1877f2;
+}
+.btns-myd {
+  display: flex;
+}
+.btn-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.more,
+.decrease {
+  border: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.seleccionar-button {
+  background-color: #000;
+  color: #ffffff;
+  padding: 7px 15px;
+  border-radius: 7px;
+  font-size: 15px;
+  cursor: pointer;
+  font-family: "Notable", sans-serif;
+}
+
+.blanco-btn {
+  background-color: #1877f2;
+  animation: encendido-blanco 3s infinite;
+}
+
+.plomo-btn {
+  background-color: #ccc;
+  animation: encendido-plomo 3s infinite;
+}
+
+.rojo-btn {
+  background-color: #ff585b;
+  animation: encendido-rojo 3s infinite;
+}
+
+.blanco-btn:hover {
+  animation-play-state: paused;
+  background-color: #0d5ecf;
+}
+
+.plomo-btn:hover {
+  animation-play-state: paused;
+  background-color: #888;
+}
+
+.rojo-btn:hover {
+  animation-play-state: paused;
+  background-color: #ff3033;
+}
+
+@keyframes encendido-blanco {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes encendido-plomo {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes encendido-rojo {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.btn-select1 {
+  margin-left: auto;
+}
+
+.btn-select2 {
+  margin-left: auto;
+}
+
+.btn-select3 {
+  margin-left: auto;
+}
+
+/* SE TERMINA LOS ESTILOS PARA MODO*/
+.alert-containerUnir {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 9999;
+}
+
+.alert-boxUnir {
+  position: relative;
+  padding: 80px;
+  background-color: #1160c8;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  border: 2px solid #f0f0f0;
+  color: #f0f0f0;
+  font-family: "Notable", sans-serif;
+}
+
+.close-btnUnir {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.close-btnUnir:hover {
+  color: red;
+}
+
+.alert-boxUnir p {
+  margin-bottom: 0;
+}
+
+/* ESTILOS PARA EL BOTON CREAR */
+.btn-select1 .seleccionar-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.btn-select1 .btn-crear {
+  width: 80px; /* Ajusta el tamaño según sea necesario */
+  height: 50px; /* Ajusta el tamaño según sea necesario */
+}
+
+/* TERMINA EL ESTILO PARA BOTON CREAR*/
+/* EMPIEZA ESTILOS PARA LOS CARDS DE LAS SALAS*/
+.room-list {
+  list-style: none;
+  padding: 0;
+}
+.room-item {
+  display: flex;
+  font-family: "apercu", sans-serif;
+  align-items: center;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  color: #fbf4f7;
+  padding: 0px 9px;
+}
+
+.room-item.tranqui {
+  background-color: #1877f2;
+}
+
+.room-item.rebelde {
+  background-color: #ccc;
+}
+
+.room-item.enfermo {
+  background-color: #ff585b;
+}
+
+.perfil-images {
+  width: 35px !important;
+  height: 35px !important;
+  max-width: 100% !important;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.room-details {
+  flex: 1;
+}
+
+.room-creator {
+  margin-right: 4px;
+  font-family: "Notable", sans-serif;
+  font-size: 13px;
+}
+
+.room-mode {
+  margin-bottom: 8px;
+  margin-right: 6px;
+}
+
+.room-coils {
+  margin-right: 8px;
+  margin-bottom: 5px;
+  font-size: 35px;
+  font-family: "Medula One", cursive;
+  color: #000;
+}
+
+.eliminar-button,
+.unirse-button {
+  padding: 2px 3px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 2px;
+}
+
+.eliminar-button {
+  background-color: #ff5555;
+  color: white;
+}
+
+.unirse-button {
+  background-color: #54ba38;
+  color: white;
+  animation: tambaleo 1s infinite;
+  margin-top: 28px;
+}
+
+.unirse-button:hover {
+  animation-play-state: paused;
+  background-color: #4f9e2d;
+}
+
+@keyframes tambaleo {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  10% {
+    transform: rotateZ(-2deg);
+  }
+  20% {
+    transform: rotateZ(2deg);
+  }
+  30% {
+    transform: rotateZ(-1deg);
+  }
+  40% {
+    transform: rotateZ(1deg);
+  }
+  50% {
+    transform: rotateZ(0deg);
+  }
+  60% {
+    transform: rotateZ(0deg);
+  }
+  70% {
+    transform: rotateZ(0deg);
+  }
+  80% {
+    transform: rotateZ(0deg);
+  }
+  90% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
+
+/**/
+@media screen and (max-width: 600px) {
+  .contenedor-padre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+
+    width: 400px;
+    height: 800px;
+  }
+
+  .card-container-crear {
+    width: 100%;
+    border-radius: 6px;
+    height: 400px;
+  }
+
+  .card-container-salas {
+    width: 100%;
+    height: 400px;
+    overflow-y: scroll;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 6px;
+  }
+
+  /*EFECTOS PARA CONTADOR*/
+
+  /* TERMINA EFECTOS DE CONTADOR*/
+
+  .card {
+    height: 360px;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  /*ESTILOS PARA EL BOTON COILS */
+  .coil {
+    position: relative;
+    display: inline-block;
+    border: 3px solid #1877f2;
+    border-radius: 8px;
+  }
+
+  .coil .fondo {
+    width: 200px; /* Tamaño deseado */
+    height: 70px; /* Tamaño deseado */
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 8px;
+  }
+
+  .coil .coils-texto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 45px;
+    color: white;
+    font-family: "Medula One", cursive;
+  }
+
+  .icon-dolar {
+    font-size: 15px;
+  }
+  /*TERMINO LOS ESTILOS*/
+
+  /* ESTILOS PARA LOS MODOS*/
+  .modo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 5px 10px;
+    border-radius: 15px;
+  }
+
+  .modo-text {
+    flex: 1;
+  }
+  .texto-modo {
+    font-family: "Notable", sans-serif;
+    /* Otros estilos CSS para el elemento */
+    color: white;
+  }
+  .texto-coils {
+    font-family: "Medula One", cursive;
+    color: #fff;
+    font-size: 26px;
+  }
+
+  .modo-text p {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 900;
+    color: white;
+  }
+  .btns-myd {
+    display: flex;
+  }
+  .btn-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .more,
+  .decrease {
+    border: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .seleccionar-button {
+    background-color: #000;
+    color: #ffffff;
+    padding: 6px 10px;
+    border-radius: 7px;
+    font-size: 15px;
+    cursor: pointer;
+    font-family: "Notable", sans-serif;
+  }
+  .blanco-btn {
+    background-color: #1877f2;
+    animation: encendido-blanco 3s infinite;
+  }
+
+  .plomo-btn {
+    background-color: #ccc;
+    animation: encendido-plomo 3s infinite;
+  }
+
+  .rojo-btn {
+    background-color: #ff585b;
+    animation: encendido-rojo 3s infinite;
+  }
+
+  .blanco-btn:hover {
+    animation-play-state: paused;
+    background-color: #0d5ecf;
+  }
+
+  .plomo-btn:hover {
+    animation-play-state: paused;
+    background-color: #888;
+  }
+
+  .rojo-btn:hover {
+    animation-play-state: paused;
+    background-color: #ff3033;
+  }
+
+  @keyframes encendido-blanco {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes encendido-plomo {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes encendido-rojo {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  /**/
+
+  /**/
+
+  .btn-select1 {
+    margin-left: auto;
+  }
+
+  .btn-select2 {
+    margin-left: auto;
+  }
+
+  .btn-select3 {
+    margin-left: auto;
+  }
+
+  /* SE TERMINA LOS ESTILOS PARA MODO*/
+
+  /* ESTILOS PARA EL BOTON CREAR */
+  .btn-select1 .seleccionar-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    padding: 0;
+  }
+
+  .btn-select1 .btn-crear {
+    width: 50px; /* Ajusta el tamaño según sea necesario */
+    height: 40px; /* Ajusta el tamaño según sea necesario */
+  }
+
+  /* TERMINA EL ESTILO PARA BOTON CREAR*/
+  /* EMPIEZA ESTILOS PARA LOS CARDS DE LAS SALAS*/
+  .room-list {
+    list-style: none;
+    padding: 0;
+  }
+  .room-item {
+    display: flex;
+    font-family: "apercu", sans-serif;
+    align-items: center;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    color: #fbf4f7;
+    padding: 0px 9px;
+  }
+
+  .room-item.tranqui {
+    background-color: #1877f2;
+  }
+
+  .room-item.rebelde {
+    background-color: #ccc;
+  }
+
+  .room-item.enfermo {
+    background-color: #ff585b;
+  }
+
+  .perfil-images {
+    width: 35px !important;
+    height: 35px !important;
+    max-width: 100% !important;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .room-details {
+    flex: 1;
+  }
+
+  .room-creator {
+    margin-right: 2px;
+    font-family: "Notable", sans-serif;
+    font-size: 8px;
+  }
+
+  .room-mode {
+    margin-bottom: 8px;
+    margin-right: 6px;
+  }
+
+  .room-coils {
+    margin-right: 8px;
+    margin-bottom: 5px;
+    font-size: 21px;
+    font-family: "Medula One", cursive;
+    color: #000;
+  }
+
+  .eliminar-button,
+  .unirse-button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  .eliminar-button {
+    background-color: #ff5555;
+    color: white;
+  }
+
+  .unirse-button {
+    background-color: #54ba38;
+    color: white;
+    font-size: 11px;
+  }
+}

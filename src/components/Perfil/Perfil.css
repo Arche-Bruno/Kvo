@@ -1,0 +1,355 @@
+.campo {
+  width: 90%;
+  max-width: 1200px;
+  height: 700px; /* Tamaño predeterminado para otros botones */
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+}
+.user {
+  color: #1877f2;
+}
+.perfil-container {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 80px;
+  position: relative;
+}
+
+/*ESTILOS PERFIL*/
+.card-bienvenido {
+  font-family: "Notable", sans-serif;
+  width: 90%;
+  max-width: 400px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #f0f0f0;
+  border-radius: 8px;
+  position: absolute;
+  top: 90px;
+}
+/*TERMINO ESTILOS PERFIL*/
+/*ESTILOS RETIRAR Y SALDO*/
+
+.card-retirar-saldo {
+  display: flex;
+  flex-direction: column;
+  top: 0px;
+  right: 20px;
+  position: absolute;
+  gap: 20px;
+}
+.perfil-card {
+  font-family: "Notable", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  color: #f0f0f0;
+  width: 700px;
+  height: 250px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 8px;
+
+  top: 90px;
+}
+
+/*TERMINO ESTILOS RETIRAR Y SALDO*/
+/*ESTILOS COILS*/
+.coil-saldo {
+  position: relative;
+  display: inline-block;
+}
+.coil-saldo {
+  border: 3px solid #1877f2;
+  border-radius: 8px;
+}
+.coil-saldo .fondo-saldo {
+  width: 200px; /* Tamaño deseado */
+  height: 70px; /* Tamaño deseado */
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.coil-saldo .coils-texto-saldo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  color: white;
+  font-family: "Medula One", cursive;
+}
+.coil-saldo {
+  position: relative;
+  display: inline-block;
+  margin-left: 190px;
+  margin-top: 25px;
+  margin-bottom: 18px;
+  border-radius: 8px;
+  border: 3px solid #1877f2;
+  animation: tambaleo 10s infinite;
+  animation-fill-mode: forwards;
+}
+.coil-saldo:hover {
+  animation-play-state: paused;
+}
+
+@keyframes tambaleo {
+  0% {
+    transform: translate(-50%, -50%) rotateZ(0deg);
+  }
+  10% {
+    transform: translate(-50%, -50%) rotateZ(-5deg);
+  }
+  20% {
+    transform: translate(-50%, -50%) rotateZ(5deg);
+  }
+  30% {
+    transform: translate(-50%, -50%) rotateZ(-3deg);
+  }
+  40% {
+    transform: translate(-50%, -50%) rotateZ(3deg);
+  }
+  50% {
+    transform: translate(-50%, -50%) rotateZ(-2deg);
+  }
+  60% {
+    transform: translate(-50%, -50%) rotateZ(2deg);
+  }
+  70% {
+    transform: translate(-50%, -50%) rotateZ(-1deg);
+  }
+  80% {
+    transform: translate(-50%, -50%) rotateZ(1deg);
+  }
+  90% {
+    transform: translate(-50%, -50%) rotateZ(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotateZ(0deg);
+  }
+}
+
+/**/
+.perfil-welcome {
+  margin-bottom: 20px;
+}
+
+.perfil-image-container {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 20px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.perfil-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.btn-cerrarSesion {
+  padding: 20px 40px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-cerrarSesion:hover {
+  background-color: #555;
+}
+
+.perfil-activo .perfil-card {
+  height: 400px; /* Tamaño estático para el perfil */
+}
+/* ESTILOS PARA BTN RETIRAR*/
+.alert-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 9999;
+}
+
+.alert-box {
+  position: relative;
+  padding: 80px;
+  background-color: #115aba;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  border: 2px solid #f0f0f0;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.close-btn:hover {
+  color: red;
+}
+
+.alert-box p {
+  margin-bottom: 0;
+}
+.yape {
+  color: #5d1c6a;
+}
+.fb {
+  color: #1877f2;
+}
+.link {
+  color: rgba(0, 0, 0, 0.9);
+}
+/* TERMINA LOS ESTILOS PARA BTN RETIRAR*/
+/* ESTILOS DE CARGANDO*/
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.loading-text {
+  color: blue;
+  font-size: 24px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/**/
+
+@media screen and (max-width: 600px) {
+  .perfil-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+    position: relative;
+  }
+
+  /*ESTILOS PERFIL*/
+  .card-bienvenido {
+    width: 190px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #f0f0f0;
+    border-radius: 8px;
+    position: absolute;
+    top: 70px;
+  }
+  /*TERMINO ESTILOS PERFIL*/
+  /*ESTILOS RETIRAR Y SALDO*/
+
+  .card-retirar-saldo {
+    display: flex;
+    flex-direction: column;
+    top: 0px;
+    right: 1px;
+    position: absolute;
+    gap: 10px;
+  }
+  .perfil-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    color: #f0f0f0;
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 8px;
+
+    top: 90px;
+  }
+
+  .icon-dolar {
+    font-size: 15px;
+  }
+
+  /*TERMINO ESTILOS RETIRAR Y SALDO*/
+  /*ESTILOS COILS*/
+  .coil-saldo {
+    position: relative;
+    display: inline-block;
+  }
+
+  .coil-saldo .fondo-saldo {
+    width: 180px; /* Tamaño deseado */
+    height: 110px; /* Tamaño deseado */
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 8px;
+    border: 1.5px solid #fff;
+  }
+
+  .coil-saldo .coils-texto-saldo {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    color: white;
+    font-family: "Medula One", cursive;
+  }
+  /**/
+  .perfil-welcome {
+    margin-bottom: 20px;
+  }
+
+  .perfil-image-container {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 20px;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+
+  .perfil-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .btn-cerrarSesion {
+    padding: 15px 40px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 10px;
+    cursor: pointer;
+  }
+
+  .btn-cerrarSesion:hover {
+    background-color: #555;
+  }
+
+  .perfil-activo .perfil-card {
+    height: 400px; /* Tamaño estático para el perfil */
+  }
+}
