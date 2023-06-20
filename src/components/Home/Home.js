@@ -26,6 +26,15 @@ const Home = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
   const audioRef = useRef(null); // Referencia al elemento de audio
 
+  useEffect(() => {
+    dispatch({ type: "MOSTRAR_CONTENIDO", payload: "perfil" });
+
+    // Comprobamos si el audio ya está cargado
+    if (audioRef.current) {
+      audioRef.current.play();
+    }
+  }, []);
+
   const handleMostrarContenido = (opcion) => {
     dispatch({ type: "MOSTRAR_CONTENIDO", payload: opcion });
   };
